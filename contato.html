@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Explore o Mundo - Expedições</title>
+
+    <link rel="stylesheet" href="folha_estilo.css">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
+</head>
+
+<body>
+
+    <header class="cabecalho">
+
+        <div class="logo">
+            <i class="fa-solid fa-earth-americas"></i>
+            <span>Explore o Mundo</span>
+        </div>
+
+        <div class="navegacao">
+
+            <nav class="menu-links">
+                <a href="index.html">Início</a>
+                <a href="destinos.html">Destinos</a>
+                <a href="sobre_nos.html">Sobre</a>
+                <a href="contato.html">Contato</a>
+            </nav>
+
+            <div class="redes-sociais">
+
+                <a href="#" class="whatsapp">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
+
+                <a href="#" class="face">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+
+                <a href="#" class="insta">
+                    <i class="fa-brands fa-square-instagram"></i>
+                </a>
+
+                <a href="#" class="twitter">
+                    <i class="fa-brands fa-x-twitter"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <main class="container">
+
+        <h1 class="titulo-secao">
+            Cadastro para Explore o Mundo - Expedições
+        </h1>
+
+
+        <div class="area-inscricao">
+
+            <form action="/processar-cadastro"
+                  method="post"
+                  class="coluna-form">
+
+
+                <label for="nome">
+                    Nome Completo:
+                </label>
+
+                <input
+                    type="text"
+                    id="nome"
+                    name="nome"
+                    placeholder="Digite seu nome..."
+                    required
+                    minlength="3"
+                    maxlength="50">
+
+
+                <label for="email">
+                    E-mail:
+                </label>
+
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="exemplo@dominio.com"
+                    required>
+
+
+                <label for="CPF">
+                    CPF:
+                </label>
+
+                <input
+                    type="password"
+                    id="cpf"
+                    name="cpf"
+                    placeholder="Digite seu cpf..."
+                    required
+                    minlength="8"
+                    maxlength="15">
+
+
+                <label for="data_viagem">
+                    Data da viagem:
+                </label>
+
+                <input
+                    type="date"
+                    id="data_viagem"
+                    name="data_viagem"
+                    min="2026-01-01"
+                    max="2030-12-31"
+                    required>
+
+
+                <fieldset class="grupo-pacotes">
+
+                    <legend>
+                        Pacotes disponíveis
+                    </legend>
+
+
+                    <div class="opcao-pacote">
+
+                        <input
+                            type="checkbox"
+                            id="coreia"
+                            name="pacotes[]"
+                            value="Coreia do Sul">
+
+                        <label for="coreia">
+                            Coreia do Sul
+                        </label>
+
+                    </div>
+
+
+                    <div class="opcao-pacote">
+
+                        <input
+                            type="checkbox"
+                            id="mexico"
+                            name="pacotes[]"
+                            value="México">
+
+                        <label for="mexico">
+                            México
+                        </label>
+
+                    </div>
+
+
+                    <div class="opcao-pacote">
+
+                        <input
+                            type="checkbox"
+                            id="canada"
+                            name="pacotes[]"
+                            value="Canadá">
+
+                        <label for="canada">
+                            Canadá
+                        </label>
+
+                    </div>
+
+
+                    <div class="opcao-pacote">
+
+                        <input
+                            type="checkbox"
+                            id="porto-seguro"
+                            name="pacotes[]"
+                            value="Porto Seguro">
+
+                        <label for="porto-seguro">
+                            Porto Seguro
+                        </label>
+
+                    </div>
+
+
+                    <div class="opcao-pacote">
+
+                        <input
+                            type="checkbox"
+                            id="alagoas"
+                            name="pacotes[]"
+                            value="Alagoas">
+
+                        <label for="alagoas">
+                            Alagoas
+                        </label>
+
+                    </div>
+
+
+                    <div class="opcao-pacote">
+
+                        <input
+                            type="checkbox"
+                            id="italia"
+                            name="pacotes[]"
+                            value="Itália">
+
+                        <label for="italia">
+                            Itália
+                        </label>
+
+                    </div>
+
+                </fieldset>
+
+
+                <label for="mensagem">
+                    Mensagem:
+                </label>
+
+                <textarea
+                    id="mensagem"
+                    name="mensagem"
+                    rows="5"
+                    placeholder="Digite sua mensagem..."
+                    required>
+                </textarea>
+
+
+                <div class="termos">
+
+                    <input
+                        type="checkbox"
+                        id="termos"
+                        name="termos"
+                        required>
+
+                    <label for="termos">
+                        Li e aceito os termos.
+                    </label>
+
+                </div>
+
+
+                <div class="botoes-form">
+
+                    <button type="submit" class="btn-enviar">
+                        Enviar
+                    </button>
+
+                    <button type="reset" class="btn-limpar">
+                        Limpar Tudo
+                    </button>
+
+                </div>
+
+            </form>
+
+        </div>
+
+    </main>
+
+
+    <footer class="rodape">
+        <div class="informacoes">
+            <p class="legenda">
+            E-mail: contato@horizonteviagens.com.br <br>
+            Telefone: (11) 3210-4000 <br>
+            WhatsApp: (11) 98765-4321 <br>
+            Plantão de Emergência 24h: (11) 97654-3210 <br>
+            Horário: Segunda a Sexta, das 09h às 18h | Sábados, das 09h às 13h</p> <br>
+
+        </div>
+
+    </footer>
+
+
+</body>
+
+</html>
